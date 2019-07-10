@@ -18,5 +18,9 @@ trait ModelConfig
             $model->id = Str::uuid();
         });
     }
+    public function attributes()
+    {
+        return $this->attributesToArray();
+    }
 
 }

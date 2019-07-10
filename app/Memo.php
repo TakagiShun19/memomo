@@ -8,4 +8,14 @@ class Memo extends Model
 {
     public $incrementing = false;
     use ModelConfig;
+
+
+    protected $hidden = [
+        'id',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
