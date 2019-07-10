@@ -6,5 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Memo extends Model
 {
-    //
+    public $incrementing = false;
+    use ModelConfig;
 }
