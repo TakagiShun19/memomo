@@ -10,9 +10,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
 
-    use Notifiable;
-
-    use ModelConfig;
+    use Notifiable, ModelConfig, HasApiTokens;
 
     public $incrementing = false;
 
