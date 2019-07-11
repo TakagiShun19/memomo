@@ -1,0 +1,95 @@
+.auth {
+    background: $theme-color;
+    padding: 0;
+    width: auto;
+    height: 100vh;
+    overflow: scroll;;
+
+    .auth-app-name {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 21px;
+        color: $white;
+    }
+    .auth-footer {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+
+        a {
+            margin-left: 16px;
+            color: rgba(255, 255, 255, 0.8);
+
+            .footer-line-separater {
+                color: rgba(230, 234, 255, 0.2);
+            }
+        }
+        &:hober {
+            color: rgba(255, 255, 255);
+            text-decoration: none;
+        }
+        @include media-breakpoint-down(sm){
+            display: block !important;
+            text-align: center;
+            width: 100%;
+            a {
+                display: block !important;
+            }
+            .footer-link-separater {
+                display: none !important;
+            }
+        }
+    }
+    .card {
+        border: none;
+        background: none;
+        box-shadow: none;
+
+        .card-body {
+            .logo {
+                width: 120px;
+                height: 120px;
+                background-color: $white;
+                border-radius: 28px;
+
+                img {
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+            .sign-text {
+                font-size: 21px;
+                color: $white;
+            }
+            hr {
+                width: 350px;
+                border-color: $white;
+            }
+            a, label {
+                color: $white;
+            }
+            input:not([type='checkbox']) {
+                height: 48px;
+                border: 1px solid $white;
+            }
+            #email {
+                border-radius: 7px 7px 0 0;
+                border-bottom: 1px solid #ced4da;
+            }
+
+            #password {
+                border-radius: 0 0 0 7px;
+            }
+            .input-group-prepend{
+                margin: 0;
+                .input-group-text{
+                    border-radius: 0 0 7px 0;
+                    border: none;
+                    background-color: #ffffff;
+                }
+
+            }
+        }
+    }
+}
