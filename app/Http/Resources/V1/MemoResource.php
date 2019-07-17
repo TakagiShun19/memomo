@@ -20,7 +20,7 @@ class MemoResource extends JsonResource
             'relationships' => [
                 'user' => new UserResource($this->user)
             ],
-            'rink' => [
+            'links' => [
                 'self' => route('memoApi', ['memo' => $this->id]),
             ],
         ];

@@ -18,7 +18,7 @@ class UserResource extends JsonResource
             'id' => $this->id,
             'attributes' => $this->resource->attributes(),
             'relationships' => [],
-            'rink' => [
+            'links' => [
                 'self' => route('profileApi'),
             ],
         ];
