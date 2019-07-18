@@ -12,7 +12,7 @@
     import MemoCard from "./MemoCard";
     export default {
         name: "MemoList",
-        components: {MemoCard},
+        components: { MemoCard },
         data: function(){
             return {
                 memos: [],

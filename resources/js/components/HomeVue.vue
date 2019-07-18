@@ -1,6 +1,6 @@
 <template>
     <div>
-        <memo-list @memo-card-has-clicked="showDetailModal"></memo-list></memo-list>
+        <memo-list @memo-card-has-clicked="showDetailModal"></memo-list>
         <memo-detail-modal ref="memoDetailModal"></memo-detail-modal>
     </div>
 </template>
